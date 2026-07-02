@@ -1,20 +1,15 @@
 public class Contact {
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String zip;
+    private String phoneNumber;
+    private String email;
 
-    String firstName;
-    String lastName;
-    String address;
-    String city;
-    String state;
-    String zip;
-    String phoneNumber;
-    String email;
-
-    // Constructor
-    public Contact(String firstName, String lastName,
-                   String address, String city,
-                   String state, String zip,
-                   String phoneNumber, String email) {
-
+    public Contact(String firstName, String lastName, String address, String city,
+                   String state, String zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -25,35 +20,42 @@ public class Contact {
         this.email = email;
     }
 
-    // toString Method
-    @Override
-    public String toString() {
-        return "Contact{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zip='" + zip + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+    public String getFirstName() {
+        return firstName;
     }
 
-    // Main Method
-    public static void main(String[] args) {
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-        Contact contact = new Contact(
-                "Anamika",
-                "Rai",
-                "Mathura",
-                "Mathura",
-                "UP",
-                "281001",
-                "9876543210",
-                "anamika@gmail.com"
-        );
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-        System.out.println(contact);
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "\nName: " + firstName + " " + lastName +
+                "\nAddress: " + address +
+                "\nCity: " + city +
+                "\nState: " + state +
+                "\nZip: " + zip +
+                "\nPhone: " + phoneNumber +
+                "\nEmail: " + email;
     }
 }
