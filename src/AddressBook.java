@@ -82,6 +82,7 @@ public class AddressBook {
             System.out.println("Contact not found.");
         }
     }
+    // Display all contacts
 
     public void displayContacts() {
         if (contacts.isEmpty()) {
