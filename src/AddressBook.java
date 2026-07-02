@@ -35,7 +35,7 @@ public class AddressBook {
 
         System.out.println("Contact added successfully.");
     }
-
+    // Method to edit existing contact
     public void editContact() {
         System.out.print("Enter first name of contact to edit: ");
         String name = scanner.nextLine();
@@ -68,6 +68,7 @@ public class AddressBook {
         System.out.println("Contact not found.");
     }
 
+// Method to delete contact
     public void deleteContact() {
         System.out.print("Enter first name of contact to delete: ");
         String name = scanner.nextLine();
